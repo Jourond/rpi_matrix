@@ -10,7 +10,7 @@
 int main(void)
 {
 	static uint8_t data[4] = {0x0,0x0,0x0,0x0};			// initialize RGB data source 
-	static uint8_t i = 0;                                                       
+	static uint8_t i = 1;                                                       
 
 	wiringPiSetup();									// initialize wiringPi 
 	wiringPiSPISetup(0,500000);							// initialize SPI  information, 0 is channel 0, 500000 is clock rate.
